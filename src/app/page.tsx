@@ -1,8 +1,9 @@
-import { Agents, Maps, Overview } from '@/components'
+import { Agents, LastestEpisode, Maps, Overview } from '@/components'
 
 const Page = () => (
   <div>
     <main>
+      <LastestEpisode />
       <Overview />
       <Agents />
       <Maps />
