@@ -1,3 +1,7 @@
+import Image from 'next/image'
+import razeImage from '../assets/raze.png'
+import reynaImage from '../assets/reyna.png'
+
 const Agents = () => (
   <section
     className="
@@ -8,15 +12,12 @@ const Agents = () => (
       after:absolute after:left-72 after:top-0 after:h-full after:border-l after:border-l-neutral-400"
   >
     <div className="container relative mx-auto flex justify-end">
-      <div className="absolute -left-24 -top-24 z-10">
-        <img
-          src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6577b1f58530e6b2/5eb7cdc121a5027d77420208/V_AGENTS_587x900_Reyna.png"
-          alt="agentes"
-        />
-        <img
+      <div className="absolute -left-24 -top-24 z-10" aria-hidden>
+        <Image src={reynaImage} alt="Agente Reyna" />
+        <Image
           className="absolute left-80 top-32 -scale-x-100"
-          src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6fef56a8182d0a81/5ebf2c2798f79d6925dbd6b4/V_AGENTS_587x900_ALL_Raze_2.png"
-          alt="agentes"
+          src={razeImage}
+          alt="Agente Raze"
         />
       </div>
       <div className="my-40 max-w-[490px] border-t border-t-tertiary-50 py-9 pl-6">

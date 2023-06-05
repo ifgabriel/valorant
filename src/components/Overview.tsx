@@ -1,6 +1,7 @@
 const Overview = () => (
   <section
     className="
+      relative
       bg-tertiary-50
       pb-64
       pt-12
