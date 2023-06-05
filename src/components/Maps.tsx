@@ -1,16 +1,19 @@
 const Maps = () => (
   <section
     className="
-      relative 
+      relative
+      bg-tertiary-50
+      pb-52
+      pt-20
       before:absolute before:left-60 before:top-4 before:h-full before:w-8 before:bg-[url('https://playvalorant.com/assets/images/background-sprite.png')] before:bg-no-repeat
       after:absolute after:left-72 after:top-0 after:h-full after:border-l after:border-l-neutral-400"
   >
-    <div className="flex flex-auto overflow-y-clip bg-tertiary-50 px-6 pt-10">
-      <h2 className="text-stroke absolute left-44 top-14 mt-7 font-heading text-[32rem] leading-[0.93] text-tertiary-50">
-        PLACE
-      </h2>
-      <div className="py-9pt-2 first-letter z-20 my-40 ml-96 max-w-[490px] border-t border-t-neutral-400">
-        <h2 className="mt-7 font-heading text-[140px] leading-[0.93] text-secondary-50">
+    <h2 className="text-stroke absolute left-44 top-14 mt-7 font-heading text-[32rem] leading-[0.93] text-tertiary-50">
+      PLACE
+    </h2>
+    <div className="flex flex-auto">
+      <div className="first-letter container z-10 mx-auto py-9">
+        <h2 className="max-w-[490px] border-t border-t-neutral-400 pt-7 font-heading text-[140px] leading-[0.93] text-secondary-50">
           SEUS MAPAS
         </h2>
         <h3 className="mt-10 font-sans text-2xl text-secondary-50">

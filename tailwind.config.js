@@ -11,6 +11,11 @@ module.exports = {
         heading: 'tungsten',
         sans: 'dintnext',
       },
+      container: {
+        padding: {
+          DEFAULT: '15rem',
+        },
+      },
       colors: {
         primary: {
           50: '#ff4655',

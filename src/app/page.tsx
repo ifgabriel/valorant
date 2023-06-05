@@ -1,8 +1,10 @@
-import { Maps } from '@/components'
+import { Agents, Maps, Overview } from '@/components'
 
 const Page = () => (
   <div>
     <main>
+      <Overview />
+      <Agents />
       <Maps />
     </main>
   </div>
