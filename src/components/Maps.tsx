@@ -1,13 +1,8 @@
+import Image from 'next/image'
+import split from '../assets/split.png'
+
 const Maps = () => (
-  <section
-    className="
-      relative
-      bg-tertiary-50
-      pb-52
-      pt-20
-      before:absolute before:left-60 before:top-4 before:h-full before:w-8 before:bg-[url('https://playvalorant.com/assets/images/background-sprite.png')] before:bg-no-repeat
-      after:absolute after:left-72 after:top-0 after:h-full after:border-l after:border-l-neutral-400"
-  >
+  <section className="section-background relative bg-tertiary-50 pb-52 pt-20 after:border-l-neutral-400">
     <h2 className="text-stroke absolute left-44 top-14 mt-7 font-heading text-[32rem] leading-[0.93] text-tertiary-50">
       PLACE
     </h2>
@@ -27,10 +22,7 @@ const Maps = () => (
         </p>
       </div>
       <div className="absolute bottom-0 right-0 top-0 flex w-full justify-end">
-        <img
-          src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt02c83424f7b41a97/6243813d8850ee0e8ea0ae56/maps-03ebbf2c074f13a65af1dba0c80f767e.png"
-          alt="Mapa split"
-        />
+        <Image src={split} alt="Mapa split" />
       </div>
     </div>
   </section>

@@ -3,16 +3,10 @@ import razeImage from '../assets/raze.png'
 import reynaImage from '../assets/reyna.png'
 
 const Agents = () => (
-  <section
-    className="
-      relative 
-      bg-primary-50
-      pb-32
-      pt-12
-      after:absolute after:left-72 after:top-0 after:h-full after:border-l after:border-l-neutral-400"
-  >
-    <div className="container relative mx-auto flex justify-end">
-      <div className="absolute -left-24 -top-24 z-10" aria-hidden>
+  <section className="section-background relative bg-primary-50 pb-32 pt-12">
+    <div className="diagonal h-14 w-80" />
+    <div className="container relative mx-auto flex justify-end before:h-4 before:w-full before:bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2cAAAAaBAMAAADBMTnUAAAALVBMVEUAAAAPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMPGSMEvDlEAAAAD3RSTlMAkT8wGAhgOycjEoN7VB+N+usOAAAAdklEQVRo3u3UwQmBcRyH8W8pvQcpcpMbvTmj5CQTKBMYwQo2sAKjWcQMvwP91eezwlNPAADg5wZ9arr+nMaclql5rlNzX6Ulo3mxwXByTGNu09Q8Fqm5ztIS0f4wWrdPzXjT3B5fh9Rctql57wIAAAAAAAB81we4bAq3ImcPlQAAAABJRU5ErkJggg==')] ">
+      <div className="absolute -top-24 left-0 z-10 w-[550px]" aria-hidden>
         <Image src={reynaImage} alt="Agente Reyna" />
         <Image
           className="absolute left-80 top-32 -scale-x-100"
@@ -20,7 +14,7 @@ const Agents = () => (
           alt="Agente Raze"
         />
       </div>
-      <div className="my-40 max-w-[490px] border-t border-t-tertiary-50 py-9 pl-6">
+      <div className="-mr-16 mb-32 mt-16 max-w-[490px] border-t border-t-tertiary-50 py-6">
         <h2 className="mt-7 font-heading text-[140px] leading-[0.93] text-tertiary-50">
           SEUS AGENTES
         </h2>

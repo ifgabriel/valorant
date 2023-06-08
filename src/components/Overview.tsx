@@ -1,13 +1,5 @@
 const Overview = () => (
-  <section
-    className="
-      relative
-      bg-tertiary-50
-      pb-64
-      pt-12
-      before:absolute before:left-60 before:top-4 before:h-full before:w-8 before:bg-[url('https://playvalorant.com/assets/images/background-sprite.png')] before:bg-no-repeat
-      after:absolute after:left-72 after:top-0 after:h-full after:border-l after:border-l-neutral-400"
-  >
+  <section className="section-background relative bg-tertiary-50 pb-64 pt-12 after:border-l-neutral-400">
     <div className="container relative mx-auto">
       <div className="border-t border-t-neutral-400">
         <h2 className="mt-7 max-w-lg font-heading text-[140px] leading-[0.93] text-secondary-50">
@@ -27,13 +19,7 @@ const Overview = () => (
               além da Disputa da Spike e do Mata-Mata!
             </p>
           </div>
-          <div
-            className="
-              max-h-2xl absolute right-20 flex max-w-2xl
-              before:absolute before:-top-9 before:left-12 before:h-2 before:w-2 before:bg-primary-50
-              after:absolute after:-top-9 after:left-0 after:h-2 after:w-2 after:bg-primary-50
-              "
-          >
+          <div className="max-h-2xl absolute right-20 flex max-w-2xl before:absolute before:-top-9 before:left-12 before:h-2 before:w-2 before:bg-primary-50 after:absolute after:-top-9 after:left-0 after:h-2 after:w-2 after:bg-primary-50">
             <span className="absolute -left-6 top-4 z-20 bg-primary-50 px-6 py-0.5 ">
               Jogo
             </span>
