@@ -3,7 +3,10 @@ import split from '../assets/split.png'
 
 const Maps = () => (
   <section className="section-background relative bg-tertiary-50 pb-52 pt-20 after:border-l-neutral-400">
-    <h2 className="text-stroke absolute left-44 top-14 mt-7 font-heading text-[32rem] leading-[0.93] text-tertiary-50">
+    <h2
+      className="text-stroke absolute left-44 top-14 mt-7 font-heading text-[32rem] leading-[0.93] text-tertiary-50"
+      aria-hidden
+    >
       PLACE
     </h2>
     <div className="flex flex-auto">

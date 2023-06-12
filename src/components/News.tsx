@@ -4,10 +4,10 @@ import new1 from '../assets/new-1.jpg'
 import new2 from '../assets/new-2.jpg'
 
 type New = {
-  image: StaticImageData
   date: string
-  category: string
   title: string
+  category: string
+  image: StaticImageData
 }
 
 const news: New[] = [
@@ -50,9 +50,9 @@ const News = () => (
         <h2 className="relative z-50 pt-7 font-heading text-9xl leading-[0.93] text-primary-50">
           ÚLTIMAS NOTÍCIAS
         </h2>
-        <div className="grid -mt-5 grid-cols-3 gap-12">
+        <ul className="-mt-5 grid grid-cols-3 gap-12">
           {news.map((item) => (
-            <div key={item.title} className="flex flex-col gap-2">
+            <li key={item.title} className="flex flex-col gap-2">
               <Image
                 width={390}
                 height={219}
@@ -70,9 +70,9 @@ const News = () => (
               <h3 className="mr-5 font-sans text-2xl text-secondary-50">
                 {item.title}
               </h3>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   </section>
